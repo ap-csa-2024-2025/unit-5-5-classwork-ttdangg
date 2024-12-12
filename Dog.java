@@ -30,7 +30,7 @@ public class Dog
     {
         size = size;
     }
-    public void setFurColor(String urColor)
+    public void setFurColor(String furColor)
     {
         furColor = furColor;
     }

@@ -26,13 +26,37 @@ public class Main
     // System.out.println("You made a point at (" + p1.getX() + "," + p1.getY() + ")");
 
 
-    Dog dog = new Dog(); 
-    
-    dog.setBreed("poodle");
-    dog.setSize(10);
-    dog.setFurColor("brown");
+    // Problem 1 - Person 
+    Person p = new Person();
 
-    System.out.println("The dog's color is " + dog.getBreed());
+    System.out.println("Enter the person's first name: ");
+    String fName = sc.nextLine();
+
+    System.out.println("Enter the person's last name: ");
+    String lName = sc.nextLine();
+
+    System.out.println("Enter the person's age: ");
+    int personAge = sc.nextInt();
+
+    System.out.println("Enter the person's social security number: ");
+    int personSSN = sc.nextInt();
+
+    p.setFirstName(fName);
+    p.setLastName(lName);
+    p.setAge(personAge);
+    p.setSocialNum(personSSN);
+
+    System.out.println(p.toString());
+
+
+
+
+
+
+
+
+
+
 
 
 

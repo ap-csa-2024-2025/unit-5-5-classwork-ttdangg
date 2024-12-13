@@ -27,28 +27,60 @@ public class Main
 
 
     // Problem 1 - Person 
-    Person p = new Person();
 
-    System.out.println("Enter the person's first name: ");
-    String fName = sc.nextLine();
+    // Person p = new Person();
 
-    System.out.println("Enter the person's last name: ");
-    String lName = sc.nextLine();
+    // System.out.println("Enter the person's first name: ");
+    // String fName = sc.nextLine();
 
-    System.out.println("Enter the person's age: ");
-    int personAge = sc.nextInt();
+    // System.out.println("Enter the person's last name: ");
+    // String lName = sc.nextLine();
 
-    System.out.println("Enter the person's social security number: ");
-    int personSSN = sc.nextInt();
+    // System.out.println("Enter the person's age: ");
+    // int personAge = sc.nextInt();
 
-    p.setFirstName(fName);
-    p.setLastName(lName);
-    p.setAge(personAge);
-    p.setSocialNum(personSSN);
+    // System.out.println("Enter the person's social security number: ");
+    // int personSSN = sc.nextInt();
 
-    System.out.println(p.toString());
+    // p.setFirstName(fName);
+    // p.setLastName(lName);
+    // p.setAge(personAge);
+    // p.setSocialNum(personSSN);
+
+    // System.out.println(p.toString());
 
 
+
+    // Problem 2 - Oven
+    Oven O = new Oven();
+    O.setmaxTemp(450);
+    O.setcurrentTemp(70);
+    String input = "";
+    while (!input.equals("q"))
+    {
+      System.out.println(O);
+      System.out.println("To preheat the oven enter \"p\", to turn the oven off enter \"o\", to restart enter \"r\", to quit enter \"q\" ");
+      input = sc.nextLine();
+
+      if (input.equals("p"))
+      {
+        System.out.println("Enter the temperature to preheat the oven to: ");
+        int temp = sc.nextInt();
+        O.preheat(temp);
+        sc.nextLine();
+      }
+
+      else if (input.equals("o"))
+      {
+        O.turnOff();
+        System.out.println("Turning the oven off.");
+      }
+
+      else if (input.equals("r"))
+      {
+        
+      }
+    }
 
 
 
